@@ -71,6 +71,7 @@ If you need multiple terminals and you're inside a Docker container, use `tmux`.
 - Both of these can be done by declaring the correct dependencies in `package.xml`.
 - If declared properly the depencies could be installed using `rosdep` as follows :-
   ```bash
+  rosdep update --include-eol-distros
   rosdep install -i --from-path src --rosdistro foxy -y
   ```
 - Your package folder should be neat. You shouldn't have multiple 'src' folders or unnecessary 'install' or 'build' folders.
